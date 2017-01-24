@@ -4,20 +4,20 @@ var FontFaceObserver = require('../vendor/fontfaceobserver');
 
 
 // load webfonts asyncusing LoasCSS filament group lib
-loadCSS("//fonts.googleapis.com/css?family=Roboto:400,500,700");
+loadCSS("https://fonts.googleapis.com/css?family=Eczar");
 
 // detect loading of fonts using fontfaceobserver lib
-var roboto400 = new FontFaceObserver("Roboto", {
+var eczar = new FontFaceObserver("Eczar", {
 	weight: 400
 });
 
-roboto400.load().then(function () {
+eczar.load().then(function () {
 	document.documentElement.className += " fonts-loaded";
 });
 
 if (typeof Promise === 'function') { // < IE9
 	Promise.all([
-		roboto400.load(),
+		eczar.load(),
 	]).then(function() {
 		document.documentElement.className += " fonts-loaded";
 	});

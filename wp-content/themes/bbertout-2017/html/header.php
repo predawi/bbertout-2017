@@ -1,5 +1,5 @@
 <?php
-require( dirname( __FILE__ ) . '/functions/_init.php' );
+//require( dirname( __FILE__ ) . '/functions/_init.php' );
 ?>
 <!doctype html>
 <!--[if lt IE 7 ]> <html class="no-js ie lte-ie9 lte-ie8 lte-ie7 ie6" lang="fr"> <![endif]-->
@@ -14,7 +14,7 @@ require( dirname( __FILE__ ) . '/functions/_init.php' );
 		<meta name="viewport" content="initial-scale=1.0" />
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		
-		<title>BeAPI FrontEnd Framework | The WordPress BFF</title>
+		<title>Bbertout 2017</title>
 		
 		<link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicons/apple-touch-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicons/apple-touch-icon-60x60.png">
@@ -67,60 +67,3 @@ require( dirname( __FILE__ ) . '/functions/_init.php' );
 				</p>
 			</div>
 		<![endif]-->
-		<div id="main">
-			<ul class="menu__fastaccess">
-				<li><a href="#main__content">Acces direct au contenu</a></li>
-				<li><a href="#searchform">Acces direct à la recherche</a></li>
-				<li><a href="#menu">Acces direct au menu</a></li>
-			</ul>
-			<div class="button__menu-container">
-				<button class="button__menu-open">
-					<svg class="button__icon icon icon-menu" aria-hidden="true" role="img">
-						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu"></use>
-					</svg>
-					Menu
-				</button>
-				<button class="button__menu-close">
-					<svg class="button__icon icon icon-close" aria-hidden="true" role="img">
-						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use>
-					</svg>
-					Fermer
-				</button>
-			</div>
-			<header id="header" class="header" role="banner">
-				<div class="wrapper">
-					<div class="header__logo">
-						<a href="#" class="header__logo-link">
-							<?php echo get_the_post_thumbnail( 0, 'logo-beapi', array( 'data-location' => 'header-logo', 'class' => 'header__img', 'alt' => 'Logo' ) ); ?> 
-						</a>
-					</div>
-					<?php if ( $class == 'home' ) :?>
-						<h1 class="header__title visuallyhidden"><a href="01-home.php">BeAPI FrontEnd Framework</a></h1>
-					<?php else: ?>
-						<div class="header__title visuallyhidden"><a href="01-home.php">BeAPI FrontEnd Framework</a></div>
-					<?php endif; ?>
-				</div>
-			</header>
-			<nav id="menu" class="menu menu__mobile" role="navigation" tabindex="-1" aria-label="Navigation Principal">
-				<div class="wrapper">
-					<ul class="sf-menu">
-						<li>
-							<a href="02-page-default.php">menu item</a>
-							<ul>
-								<li><a href="#">menu item</a></li>
-								<li><a href="#">menu item</a></li>
-								<li><a href="#">menu item</a></li>
-								<li><a href="#">menu item</a></li>
-								<li><a href="#">menu item</a></li>
-								<li><a href="#">menu item</a></li>
-							</ul>
-						</li>
-						<li class="current-menu-item"><a href="#">menu item</a></li>
-						<li><a href="#">menu item</a></li>
-						<li><a href="#">menu item</a></li>
-						<li><a href="#">menu item</a></li>
-					</ul>
-				</div>
-			</nav>
-			<main id="main__content" class="main__content" role="main" tabindex="-1" aria-label="Contenu Principal">
-				<div class="wrapper">

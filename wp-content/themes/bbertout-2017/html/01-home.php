@@ -1,34 +1,36 @@
 <?php $class = 'home'; ?>
 <?php include 'header.php'; ?>
 		
-	<section id="content" class="content">
-		<h2>A post list</h2>
-		<div class="entry__loop">
-			<?php include 'blocks/entry__summary-01.php' ?>
-			<?php include 'blocks/entry__summary-01.php' ?>
-			<?php include 'blocks/entry__summary-01.php' ?>
-			<?php include 'blocks/entry__summary-01.php' ?>
-			<?php include 'blocks/entry__summary-01.php' ?>
-			<?php include 'blocks/entry__summary-01.php' ?>
-			<?php include 'blocks/entry__summary-01.php' ?>
-			<?php include 'blocks/entry__summary-01.php' ?>
-			<?php include 'blocks/entry__summary-01.php' ?>
-			<?php include 'blocks/entry__summary-01.php' ?>
-			<?php include 'blocks/entry__summary-01.php' ?>
-			<?php include 'blocks/entry__summary-01.php' ?>
+	<!--div class="global-wrapper">
+		
+		<div class="home-access">
+			<div class="home-access__logo">
+				<img src="http://placehold.it/100x150" alt="">
+			</div>
+			<h1 class="home-access__name">
+				<a href="#" class="home-access__link">
+					<span>Benjamin</span>
+					<span>Bertout</span>
+				</a>
+			</h1>
 		</div>
-		<?php include 'blocks/wp-pagenavi.php' ?>
-	</section>
-	
-	<aside class="sidebar" id="sidebar">
-		<div class="widget-area">
-			<?php include 'blocks/widgets/widget-search.php'; ?>
-			<?php include 'blocks/widgets/widget-text.php'; ?>
-			<?php include 'blocks/widgets/widget-categories.php'; ?>
-			<?php include 'blocks/widgets/widget-archive.php'; ?>
-			<?php include 'blocks/widgets/widget-pages.php'; ?>
-		</div>
-	</aside>
+
+	</div-->
+
+	<div class="wrapper">
+		<header>
+			<div class="logo-name">
+				<span>Benjamin</span>
+				<span>Bertout</span>
+			</div>
+
+			<nav>
+				<li><a href="#">works</a></li>
+				<li><a href="#">about</a></li>
+				<li><a href="#">contact</a></li>
+			</nav>
+		</header>
+	</div>
 
 			
 <?php include 'footer.php'; ?>
