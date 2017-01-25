@@ -2725,8 +2725,8 @@ button:active,
 .home-access {
   position: relative;
   top: 50%;
-  width: 350px;
-  width: 21.875rem;
+  width: 365px;
+  width: 22.8125rem;
   display: inline-block;
   color: #fff;
   text-align: left;
@@ -2746,6 +2746,7 @@ button:active,
 
 .home-access__name {
   display: inline-block;
+  margin: 0;
   vertical-align: middle;
   text-transform: uppercase;
   font-size: 45px;

@@ -1,11 +1,11 @@
 <?php $class = 'home'; ?>
 <?php include 'header.php'; ?>
 		
-	<!--div class="global-wrapper">
+	<div class="global-wrapper">
 		
 		<div class="home-access">
 			<div class="home-access__logo">
-				<img src="http://placehold.it/100x150" alt="">
+				<img src="../assets/img/bbertout-logo.svg" width="120" height="150" alt="">
 			</div>
 			<h1 class="home-access__name">
 				<a href="#" class="home-access__link">
@@ -15,9 +15,9 @@
 			</h1>
 		</div>
 
-	</div-->
+	</div>
 
-	<div class="wrapper">
+	<!--div class="wrapper">
 		<header>
 			<div class="logo-name">
 				<span>Benjamin</span>
@@ -30,7 +30,7 @@
 				<li><a href="#">contact</a></li>
 			</nav>
 		</header>
-	</div>
+	</div-->
 
 			
 <?php include 'footer.php'; ?>
