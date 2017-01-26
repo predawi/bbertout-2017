@@ -2754,6 +2754,67 @@ button:active,
   .home-access__name span {
     display: block; }
 
+.waves__wrapper {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 175px;
+  height: 10.9375rem;
+  overflow: hidden; }
+
+.waves {
+  position: absolute;
+  left: 0;
+  width: calc(100% + 200px);
+  width: calc(100% + 12.5rem);
+  height: 130px;
+  height: 8.125rem;
+  background-size: auto 130px; }
+
+.waves-first {
+  z-index: 4;
+  bottom: 0;
+  background: url(../../assets/img/waves-01.svg) repeat-x;
+  animation: move 5s infinite ease-in-out;
+  animation-delay: -3s;
+  filter: blur(1.5px); }
+
+.waves-second {
+  z-index: 3;
+  bottom: 15px;
+  bottom: 0.9375rem;
+  background: url(../../assets/img/waves-02.svg) repeat-x;
+  animation: move 7s infinite ease-in-out;
+  animation-delay: -5s;
+  filter: blur(1px); }
+
+.waves-third {
+  z-index: 2;
+  bottom: 30px;
+  bottom: 1.875rem;
+  background: url(../../assets/img/waves-01.svg) repeat-x;
+  animation: move 9s infinite ease-in-out;
+  animation-delay: -2s;
+  filter: blur(0.5px); }
+
+.waves-fourth {
+  z-index: 1;
+  bottom: 45px;
+  bottom: 2.8125rem;
+  background: url(../../assets/img/waves-02.svg) repeat-x;
+  animation: move 11s infinite ease-in-out;
+  animation-delay: -9s; }
+
+@keyframes move {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(-100px); }
+  100% {
+    transform: translateX(0); } }
+
 @media print {
   * {
     background: transparent !important;

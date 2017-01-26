@@ -1,6 +1,14 @@
 <?php $class = 'home'; ?>
 <?php include 'header.php'; ?>
-		
+	
+	<!-- Waves -->
+	<div class="waves__wrapper">
+		<div class="waves waves-first"></div>
+		<div class="waves waves-second"></div>
+		<div class="waves waves-third"></div>
+		<div class="waves waves-fourth"></div>
+	</div>
+	
 	<div class="global-wrapper">
 		
 		<div class="home-access">
