@@ -32,8 +32,8 @@
 			</div>
 			<h1 class="home-access__name">
 				<a href="#" class="home-access__link">
-					<span>Benjamin</span>
-					<span>Bertout</span>
+					<span class="surname">Benjamin</span>
+					<span class="name">Bertout</span>
 				</a>
 			</h1>
 		</div>

@@ -10,19 +10,31 @@
 	position: absolute;
 	top: 0; left: 0;
 	width: 100%; height: 100%;
-	background: $darkcolor;
 	text-align: center;
 	overflow: hidden;
 	@include transition(all .2s);
 	&.preparing {
-		width: calc(100% - 32px); height: calc(100% - 32px);
-		margin: 16px;
+		&:after {
+			width: calc(100% - 32px); height: calc(100% - 32px);
+			margin: 16px;
+		}
 	}
 	&.prepared {
-		@include animation(prepared 0.7s ease-in-out forwards);
-		.home-access {
-			opacity: 0;
+		&:after {
+			@include animation(prepared 0.7s ease-in-out forwards);
+			.home-access {
+				opacity: 0;
+			}
 		}
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0; left: 0;
+		width: 100%; height: 100%;
+		background: $darkcolor;
+		@include transition(all .2s);
 	}
 }
 @include keyframes("prepared") {
@@ -62,7 +74,44 @@
 	}
 }
 .home-access__link {
-	
+	span {
+		position: relative;
+		&:after {
+			position: absolute;
+			z-index: 1;
+			top: 50%;
+			content: "";
+			width: 100%; height: 2px;
+			margin-top: -4px;
+			background: $lightcolor;
+			@include animation(nameUnstroke .4s cubic-bezier(0.9, 0, 0, 1) forwards);
+		}
+	}
+	.surname {
+		&:after {
+			right: 0;
+		}
+	}
+	.name {
+		&:after {
+			left: 0;
+		}
+	}
+	@include hover {
+		span {
+			&:after {
+				@include animation(nameStroke .4s cubic-bezier(0.9, 0, 0, 1) forwards);
+			}
+		}
+	}
+}
+@include keyframes(nameUnstroke) {
+	from { width: 100%; }
+	to { width: 0%; }
+}
+@include keyframes(nameStroke) {
+	from { width: 0%; }
+	to { width: 100%; }
 }
 
 //-- STARS
