@@ -2,6 +2,7 @@
 -------------------------------------------------------------- */
 .home {
 	background: $lightcolor;
+	overflow:hidden;
 }
 
 
@@ -64,6 +65,10 @@
 	
 }
 
+//-- STARS
+
+
+// -- WAVES
 .waves__wrapper {
 	position: absolute;
 	top: 0; left: 0;
@@ -76,6 +81,11 @@
 	bottom: 0; left: 0;
 	width: 100%; height: 120px;
 	margin-bottom: 0;
+	opacity: 0;
+	@include transition(opacity 1s ease-in-out);
+	.fonts-loaded & {
+		opacity: 1;
+	}
 	li {
 		width: 100%;
 		height: 130px;
@@ -90,38 +100,33 @@
 .waves-first {
 	z-index: 4;
 	bottom: 0;
-	background: url(#{$images-url}/waves-01.svg) repeat-x;
-	animation: move 5s infinite ease-in-out;
-	animation-delay:-3s;
+	background: url(#{$images-url}/black-waves-01.svg) repeat-x;
 	filter: blur(1.5px);
+	@include animation(move 5s ease-in-out -3s infinite);
 }
 .waves-second {
 	z-index: 3;
 	bottom: 15px;
-	background: url(#{$images-url}/waves-02.svg) repeat-x;
-	animation: move 7s infinite ease-in-out;
-	animation-delay:-5s;
+	background: url(#{$images-url}/black-waves-02.svg) repeat-x;
 	filter: blur(1px);
+	@include animation(move 7s ease-in-out -5s infinite);
 }
-
 .waves-third {
 	z-index: 2;
 	bottom: 30px;
-	background: url(#{$images-url}/waves-01.svg) repeat-x;
-	animation: move 9s infinite ease-in-out;
-	animation-delay:-2s;
+	background: url(#{$images-url}/black-waves-01.svg) repeat-x;
 	filter: blur(.5px);
+	@include animation(move 9s ease-in-out -2s infinite);
 }
-
 .waves-fourth {
 	z-index: 1;
 	bottom: 45px;
-	background: url(#{$images-url}/waves-02.svg) repeat-x;
-	animation: move 11s infinite ease-in-out;
-	animation-delay:-9s;
+	background: url(#{$images-url}/black-waves-02.svg) repeat-x;
+	@include animation(move 11s ease-in-out -9s infinite);
 }
 
-@keyframes move {
+
+@include keyframes(move) {
 		0% {transform:translateX(0);}
 		50% {transform:translateX(-100px);}
 		100% {transform:translateX(0);}

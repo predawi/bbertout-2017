@@ -1,6 +1,10 @@
 <?php $class = 'home'; ?>
 <?php include 'header.php'; ?>
 	
+	<div class="stars">
+	
+	</div>
+
 	<!-- Waves -->
 	<div class="waves__wrapper">
 		<ul class="waves__parallax" id="waves__parallax">
