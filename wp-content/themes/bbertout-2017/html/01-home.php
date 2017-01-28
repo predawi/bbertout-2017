@@ -3,10 +3,21 @@
 	
 	<!-- Waves -->
 	<div class="waves__wrapper">
-		<div class="waves waves-first"></div>
-		<div class="waves waves-second"></div>
-		<div class="waves waves-third"></div>
-		<div class="waves waves-fourth"></div>
+		<ul class="waves__parallax" id="waves__parallax">
+			
+			<li class="layer" data-depth="0.20">
+				<div class="waves waves-fourth"></div>
+			</li>
+			<li class="layer" data-depth="0.40">
+				<div class="waves waves-third"></div>
+			</li>
+			<li class="layer" data-depth="0.60">
+				<div class="waves waves-second"></div>
+			</li>
+			<li class="layer" data-depth="0.80">
+				<div class="waves waves-first"></div>
+			</li>
+		</ul>
 	</div>
 	
 	<div class="global-wrapper">
