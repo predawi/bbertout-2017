@@ -12,10 +12,10 @@ body {
 	font-family: $googlefont-1;
 }
 a {
-	color: $maincolor;
+	color: $textcolor;
 	text-decoration: none;
 	@include hover {
-		color: $maincolor;
+		color: $textcolor;
 	}
 }
 

@@ -38,22 +38,23 @@
 			</h1>
 		</div>
 
+		<div class="wrapper main-content" id="main-content">
+			<header class="header">
+				<div class="logo-name">
+					<span>Benjamin</span>
+					<span>Bertout</span>
+				</div>
+
+				<nav class="menu">
+					<li><a href="#">works</a></li>
+					<li><a href="#">about</a></li>
+					<li><a href="#">contact</a></li>
+				</nav>
+			</header>
+		</div>
+
 	</div>
 
-	<!--div class="wrapper">
-		<header>
-			<div class="logo-name">
-				<span>Benjamin</span>
-				<span>Bertout</span>
-			</div>
-
-			<nav>
-				<li><a href="#">works</a></li>
-				<li><a href="#">about</a></li>
-				<li><a href="#">contact</a></li>
-			</nav>
-		</header>
-	</div-->
 
 			
 <?php include 'footer.php'; ?>

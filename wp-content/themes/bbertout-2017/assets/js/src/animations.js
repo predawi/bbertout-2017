@@ -3,15 +3,28 @@
  */
 
 // Dependencies
-var jQuery = require('jquery');
+var $ = require('jquery');
 
 
-jQuery('.home-access__link').hover(function() {
-	jQuery('.global-wrapper').addClass('preparing');
+// Hovering entering link
+$('.home-access__link').hover(function() {
+	$('.global-wrapper').addClass('preparing');
 }, function() {
-	jQuery('.global-wrapper').removeClass('preparing');
+	$('.global-wrapper').removeClass('preparing');
 });
 
-jQuery('.home-access__link').on('click', function() {
-	jQuery('.global-wrapper').addClass('prepared');
+// Entering on site
+$('.home-access__link').on('click', function() {
+	$('.global-wrapper').addClass('prepared');
+	$('.waves__parallax').addClass('disappear');
+	setTimeout(function(){
+		$('.waves__wrapper, .home-access, .stars').remove();
+		$('.global-wrapper').addClass('loaded');
+		loadMainContent();
+	}, 1400);
 });
+
+
+function loadMainContent() {
+	$('#main-content').fadeIn();
+}

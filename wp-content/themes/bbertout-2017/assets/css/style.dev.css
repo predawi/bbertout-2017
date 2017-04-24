@@ -1634,6 +1634,24 @@ html {
   to {
     opacity: 1; } }
 
+@-webkit-keyframes starFadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 0.6; } }
+
+@-moz-keyframes starFadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 0.6; } }
+
+@keyframes starFadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 0.6; } }
+
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
@@ -1713,10 +1731,10 @@ body {
   font-family: "Eczar", sans-serif; }
 
 a {
-  color: #fff;
+  color: #333;
   text-decoration: none; }
   a:hover, a:active, a:focus {
-    color: #fff; }
+    color: #333; }
 
 /* Headings
 ----------------------------------------------------------------------------------------------------*/
@@ -2404,6 +2422,9 @@ button:active,
   margin: 0 auto 20px;
   margin: 0 auto 1.25rem; }
 
+.logo-name {
+  float: left; }
+
 /* Footer css
  ----------------------------------------------------------------------------------------------------*/
 .footer {
@@ -2688,6 +2709,10 @@ button:active,
     animation: prepared 0.7s ease-in-out forwards; }
     .global-wrapper.prepared:after .home-access {
       opacity: 0; }
+  .global-wrapper.loaded {
+    position: relative;
+    top: auto;
+    left: auto; }
   .global-wrapper:after {
     content: "";
     position: absolute;
@@ -2766,32 +2791,33 @@ button:active,
   .home-access__name span {
     display: block; }
 
-.home-access__link span {
-  position: relative; }
-  .home-access__link span:after {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    content: "";
-    width: 100%;
-    height: 2px;
-    height: 0.125rem;
-    margin-top: -4px;
-    background: #fff;
-    -webkit-animation: nameUnstroke 0.4s cubic-bezier(0.9, 0, 0, 1) forwards;
-    -moz-animation: nameUnstroke 0.4s cubic-bezier(0.9, 0, 0, 1) forwards;
-    animation: nameUnstroke 0.4s cubic-bezier(0.9, 0, 0, 1) forwards; }
-
-.home-access__link .surname:after {
-  right: 0; }
-
-.home-access__link .name:after {
-  left: 0; }
-
-.home-access__link:hover span:after, .home-access__link:active span:after, .home-access__link:focus span:after {
-  -webkit-animation: nameStroke 0.4s cubic-bezier(0.9, 0, 0, 1) forwards;
-  -moz-animation: nameStroke 0.4s cubic-bezier(0.9, 0, 0, 1) forwards;
-  animation: nameStroke 0.4s cubic-bezier(0.9, 0, 0, 1) forwards; }
+.home-access__link {
+  color: #fff; }
+  .home-access__link span {
+    position: relative; }
+    .home-access__link span:after {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      content: "";
+      width: 100%;
+      height: 2px;
+      height: 0.125rem;
+      margin-top: -4px;
+      background: #fff;
+      -webkit-animation: nameUnstroke 0.4s cubic-bezier(0.9, 0, 0, 1) forwards;
+      -moz-animation: nameUnstroke 0.4s cubic-bezier(0.9, 0, 0, 1) forwards;
+      animation: nameUnstroke 0.4s cubic-bezier(0.9, 0, 0, 1) forwards; }
+  .home-access__link .surname:after {
+    right: 0; }
+  .home-access__link .name:after {
+    left: 0; }
+  .home-access__link:hover, .home-access__link:active, .home-access__link:focus {
+    color: #fff; }
+    .home-access__link:hover span:after, .home-access__link:active span:after, .home-access__link:focus span:after {
+      -webkit-animation: nameStroke 0.4s cubic-bezier(0.9, 0, 0, 1) forwards;
+      -moz-animation: nameStroke 0.4s cubic-bezier(0.9, 0, 0, 1) forwards;
+      animation: nameStroke 0.4s cubic-bezier(0.9, 0, 0, 1) forwards; }
 
 @-webkit-keyframes nameUnstroke {
   from {
@@ -2829,6 +2855,44 @@ button:active,
   to {
     width: 100%; } }
 
+.stars {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  height: 15.625rem; }
+
+.star,
+.nova,
+.supernova {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 1px;
+  width: 0.0625rem;
+  height: 1px;
+  height: 0.0625rem;
+  background: #fff;
+  -webkit-animation: starFadeIn 2s forwards;
+  -moz-animation: starFadeIn 2s forwards;
+  animation: starFadeIn 2s forwards; }
+
+.nova {
+  width: 2px;
+  width: 0.125rem;
+  height: 2px;
+  height: 0.125rem;
+  border-radius: 50%; }
+
+.supernova {
+  width: 3px;
+  width: 0.1875rem;
+  height: 3px;
+  height: 0.1875rem;
+  border-radius: 50%; }
+
 .waves__wrapper {
   position: absolute;
   top: 0;
@@ -2856,6 +2920,28 @@ button:active,
     width: 100%;
     height: 130px;
     height: 8.125rem; }
+  .waves__parallax.disappear {
+    -webkit-animation: disappearDown 1s ease-in-out 0.7s forwards;
+    -moz-animation: disappearDown 1s ease-in-out 0.7s forwards;
+    animation: disappearDown 1s ease-in-out 0.7s forwards; }
+
+@-webkit-keyframes disappearDown {
+  from {
+    bottom: 0; }
+  to {
+    bottom: -100%; } }
+
+@-moz-keyframes disappearDown {
+  from {
+    bottom: 0; }
+  to {
+    bottom: -100%; } }
+
+@keyframes disappearDown {
+  from {
+    bottom: 0; }
+  to {
+    bottom: -100%; } }
 
 .waves {
   position: absolute;
@@ -2927,6 +3013,9 @@ button:active,
     transform: translateX(-100px); }
   100% {
     transform: translateX(0); } }
+
+.main-content {
+  display: none; }
 
 @media print {
   * {

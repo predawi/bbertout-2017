@@ -48,6 +48,14 @@
 		opacity: 1;
 	}
 }
+@include keyframes(starFadeIn) {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 0.6;
+	}
+}
 @include keyframes(fadeInUp) {
 	from {
 		opacity: 0;
