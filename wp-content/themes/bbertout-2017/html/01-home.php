@@ -41,6 +41,7 @@
 		<div class="wrapper main-content" id="main-content">
 			<header class="header">
 				<div class="logo-name">
+					<img src="../assets/img/bbertout-logo-black.svg" alt="">
 					<span>Benjamin</span>
 					<span>Bertout</span>
 				</div>

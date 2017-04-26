@@ -11,7 +11,6 @@ var parallax = require('../vendor/jquery.parallax');
 generateStars();
 function generateStars() {
 	var star, xPos, yPos, starType = ['star','star','star','nova','nova','supernova'], starNumber = 0, axisY = [1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,5,5,5,5,6,6,6,7,7,7,8,8,9,10];
-	console.log(axisY);
 
 	starInterval = setInterval(function(){
 		// Increment timer
