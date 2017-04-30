@@ -1,0 +1,46 @@
+/* Page works css
+-------------------------------------------------------------- */
+.highlight__project {
+	position: relative;
+	margin-bottom: 150px;
+	@include clearfix;
+}
+.highlight__project__img {
+	position: relative;
+	z-index: 1;
+	@media screen and (min-width: $tablet-medium) {
+		float: right;
+		max-width: 70%; height: auto;
+		opacity: 0.7;
+		@include hover {
+			opacity: 1;
+		}
+	}
+}
+.highlight__project__title {
+	font-size: 32px;
+	@media screen and (min-width: $tablet-medium) {
+		position: absolute;
+		z-index: 2;
+		top: 50px; left: 7%;
+		max-width: 220px;
+	}
+}
+.highlight__project--alt {
+	@media screen and (min-width: $tablet-medium) {
+		.highlight__project__img {
+			float: left;
+		}
+		.highlight__project__title {
+			left: auto; right: 7%;
+		}
+	}
+}
+
+.clients__list {
+
+}
+.client___logo {
+	display: inline-block;
+	margin: 0 20px 20px;
+}

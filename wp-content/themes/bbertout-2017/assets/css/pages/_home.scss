@@ -2,7 +2,6 @@
 -------------------------------------------------------------- */
 .home {
 	background: $lightcolor;
-	overflow:hidden;
 }
 
 
@@ -30,6 +29,7 @@
 	&.loaded {
 		position: relative;
 		top: auto; left: auto;
+		overflow: visible;
 	}
 	&:after {
 		content: "";

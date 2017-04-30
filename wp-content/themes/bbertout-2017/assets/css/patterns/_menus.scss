@@ -70,21 +70,14 @@
 	}
 	ul {
 		@include clearfix;
-		ul {
-			display: none;
-		}
 		&>li {
 			&>a {
 				display: block;
 				padding: 10px;
+				text-decoration: none;
 				@include hover {
 					color:$lightcolor;
 					background:$maincolor;
-				}
-			}
-			@include hover {
-				ul {
-					display: block;
 				}
 			}
 			&.sfHover,
@@ -103,32 +96,40 @@
 		left: auto;
 		overflow: inherit;
 		background: none;
-		width: auto;
+		width: 100%;
 		padding: 0;
+		text-align: center;
 		ul {
+			font-size: 18px;
 			&>li {
-				display: inline-block;
 				position: relative;
-				@include hover {
-					ul {
-						top: 40px;
+				display: inline-block;
+				margin: 0 15px;
+				list-style-type: none;
+				a {
+					position: relative;
+					padding: 0;
+					&:after {
+						content: "";
+						position: absolute;
+						z-index: 1;
+						top: 12px; left: 0;
+						width: 0; height: 1px;
+						background: $darkcolor;
+						@include transition(all .2s cubic-bezier(0.9, 0, 0, 1));
+					}
+					@include hover {
+						color: $darkcolor;
+						&:after {
+							width: 100%;
+						}
 					}
 				}
-				&.sfHover {
-					ul {
-						top: 40px;
-					}
-				}
-			}
-			ul {
-				top: 100%;
-				position: absolute;
-				background: $lightcolor;
-				li {
+				&.active {
 					a {
-						@include hover {
-							color:$lightcolor;
-							background:$maincolor;
+						color: $darkcolor;
+						&:after {
+							width: 100%;
 						}
 					}
 				}

@@ -1,5 +1,16 @@
 /* Header css
  ----------------------------------------------------------------------------------------------------*/
+.main-stars {
+	position: absolute;
+	z-index: -1;
+	top: 0; left: 0;
+	width: 100%; height: 250px;
+	.star,
+	.nova,
+	.supernova {
+		background: $darkcolor;
+	}
+}
 .header {
 	@include clearfix;
 	padding-top: $base-spacing;
@@ -13,6 +24,15 @@
 }
 
 
-.logo-name {
-	float: left;
+.header__logo {
+	text-align: center;
+	img {
+		max-width: 150px;
+	}
+	@media screen and (min-width: $desktop-small) {
+		
+	}
+}
+.header__logo__inner {
+
 }

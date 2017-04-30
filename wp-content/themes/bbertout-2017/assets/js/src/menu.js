@@ -4,10 +4,7 @@
 
 // Dependencies
 var jQuery = require('jquery');
-var superfish = require('../vendor/superfish');
 
-
-jQuery('.sf-menu').superfish();
 
 /**
  * Menu Mobile
@@ -39,3 +36,17 @@ if (matchMedia('(min-width: 1024px) and (orientation:landscape)').matches) {
 	jQuery("html, body").removeClass("menu-mobile--active");
 }
 
+
+jQuery('.menu a').on('click', function(e){
+
+	// Reset nav and blocs
+	jQuery('.menu a').removeClass('active');
+	jQuery('.base-section').hide();
+
+	// Get ID + show target
+	jQuery(this).addClass('active');
+	var target = jQuery(this).attr('href');
+	jQuery(target).fadeIn();
+
+	e.preventDefault();
+});
