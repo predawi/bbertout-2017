@@ -17,7 +17,7 @@ generateStars(mainStars);
 function generateStars(context) {
 	var star, xPos, yPos, starType = ['star','star','star','nova','nova','supernova'], starNumber = 0, axisY = [1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,5,5,5,5,6,6,6,7,7,7,8,8,9,10];
 
-	starInterval = setInterval(function(){
+	var starInterval = setInterval(function(){
 		// Increment timer
 		starNumber = starNumber + 1;
 		// Define X and Y pos
@@ -28,9 +28,10 @@ function generateStars(context) {
 		context.append(star);
 
 		// Test if star number is reached
-		if(starNumber == 200) {
+		if(starNumber >= 200) {
+			console.log('finish');
 			clearInterval(starInterval);
 			return;
 		}
-	},30);
+	},60);
 }

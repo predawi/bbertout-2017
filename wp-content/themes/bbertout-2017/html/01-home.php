@@ -1,6 +1,6 @@
 <?php $class = 'home'; ?>
 <?php include 'header.php'; ?>
-	
+
 	<!-- Stars -->
 	<div id="stars" class="stars"></div>
 
@@ -16,14 +16,14 @@
 			<li class="layer" data-depth="0.60">
 				<div class="waves waves-second"></div>
 			</li>
-			<li class="layer" data-depth="0.80">
+			<!--li class="layer" data-depth="0.80">
 				<div class="waves waves-first"></div>
-			</li>
+			</li-->
 		</ul>
 	</div>
-	
+
 	<div class="global-wrapper">
-		
+
 		<div class="home-access">
 			<div class="home-access__logo">
 				<img src="../assets/img/bbertout-logo.svg" width="120" height="150" alt="">
@@ -55,7 +55,7 @@
 				</ul>
 			</nav>
 		</header>
-		
+
 		<!-- WORKS -->
 		<section id="works" class="base-section">
 
@@ -83,7 +83,7 @@
 			</div>
 
 		</section>
-		
+
 		<!-- ABOUT -->
 		<section id="about" class="base-section">
 
@@ -92,15 +92,13 @@
 
 				<p>Other than that, I'm a hardcore kid (yes, I listen to "<a href="https://www.youtube.com/watch?v=H6wYuhLxXm8" class="mask-effect">screaming people</a>") of 28 years old, traveller, food lover, gamer, brewer, musician... and plenty of others stuff.</p>
 			</div>
-		
+
 		</section>
-		
+
 		<!-- CONTACT -->
 		<section id="contact" class="base-section">
 		</section>
 
 	</div>
 
-
-			
 <?php include 'footer.php'; ?>

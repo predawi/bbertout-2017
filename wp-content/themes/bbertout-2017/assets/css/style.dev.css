@@ -3044,7 +3044,8 @@ button:active,
 .waves-first {
   z-index: 4;
   bottom: 0;
-  background: url(../../assets/img/black-waves-01.svg) repeat-x;
+  background-image: url(../../assets/img/black-waves-01.svg);
+  background-repeat: repeat-x;
   filter: blur(1.5px);
   -webkit-animation: move 5s ease-in-out -3s infinite;
   -moz-animation: move 5s ease-in-out -3s infinite;
@@ -3054,7 +3055,8 @@ button:active,
   z-index: 3;
   bottom: 15px;
   bottom: 0.9375rem;
-  background: url(../../assets/img/black-waves-02.svg) repeat-x;
+  background-image: url(../../assets/img/black-waves-02.svg);
+  background-repeat: repeat-x;
   filter: blur(1px);
   -webkit-animation: move 7s ease-in-out -5s infinite;
   -moz-animation: move 7s ease-in-out -5s infinite;
@@ -3064,7 +3066,8 @@ button:active,
   z-index: 2;
   bottom: 30px;
   bottom: 1.875rem;
-  background: url(../../assets/img/black-waves-01.svg) repeat-x;
+  background-image: url(../../assets/img/black-waves-01.svg);
+  background-repeat: repeat-x;
   filter: blur(0.5px);
   -webkit-animation: move 9s ease-in-out -2s infinite;
   -moz-animation: move 9s ease-in-out -2s infinite;
@@ -3074,7 +3077,8 @@ button:active,
   z-index: 1;
   bottom: 45px;
   bottom: 2.8125rem;
-  background: url(../../assets/img/black-waves-02.svg) repeat-x;
+  background-image: url(../../assets/img/black-waves-02.svg);
+  background-repeat: repeat-x;
   -webkit-animation: move 11s ease-in-out -9s infinite;
   -moz-animation: move 11s ease-in-out -9s infinite;
   animation: move 11s ease-in-out -9s infinite; }

@@ -185,28 +185,32 @@
 .waves-first {
 	z-index: 4;
 	bottom: 0;
-	background: url(#{$images-url}/black-waves-01.svg) repeat-x;
+	background-image: url(#{$images-url}/black-waves-01.svg);
+	background-repeat: repeat-x;
 	filter: blur(1.5px);
 	@include animation(move 5s ease-in-out -3s infinite);
 }
 .waves-second {
 	z-index: 3;
 	bottom: 15px;
-	background: url(#{$images-url}/black-waves-02.svg) repeat-x;
+	background-image: url(#{$images-url}/black-waves-02.svg);
+	background-repeat: repeat-x;
 	filter: blur(1px);
 	@include animation(move 7s ease-in-out -5s infinite);
 }
 .waves-third {
 	z-index: 2;
 	bottom: 30px;
-	background: url(#{$images-url}/black-waves-01.svg) repeat-x;
+	background-image: url(#{$images-url}/black-waves-01.svg);
+	background-repeat: repeat-x;
 	filter: blur(.5px);
 	@include animation(move 9s ease-in-out -2s infinite);
 }
 .waves-fourth {
 	z-index: 1;
 	bottom: 45px;
-	background: url(#{$images-url}/black-waves-02.svg) repeat-x;
+	background-image: url(#{$images-url}/black-waves-02.svg);
+	background-repeat: repeat-x;
 	@include animation(move 11s ease-in-out -9s infinite);
 }
 
