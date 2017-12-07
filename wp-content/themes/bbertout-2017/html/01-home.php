@@ -16,14 +16,12 @@
 			<li class="layer" data-depth="0.60">
 				<div class="waves waves-second"></div>
 			</li>
-			<!--li class="layer" data-depth="0.80">
-				<div class="waves waves-first"></div>
-			</li-->
 		</ul>
 	</div>
 
+	<!-- Global intro -->
 	<div class="global-wrapper">
-
+		<!-- Home Access -->
 		<div class="home-access">
 			<div class="home-access__logo">
 				<img src="../assets/img/bbertout-logo.svg" width="120" height="150" alt="">
@@ -35,18 +33,18 @@
 				</a>
 			</h1>
 		</div>
-
 	</div>
 
+	<!-- Main content -->
 	<div class="wrapper main-content" id="main-content">
-
+		<!-- Stars -->
 		<div id="main-stars" class="main-stars"></div>
-
+		<!-- Header -->
 		<header class="header">
 			<div class="header__logo">
 				<img src="../assets/img/bbertout-logo-black.svg" alt="">
 			</div>
-
+			<!-- Main nav -->
 			<nav class="menu">
 				<ul>
 					<li><a href="#works">works</a></li>
