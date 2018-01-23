@@ -58,25 +58,25 @@
 		<section id="works" class="base-section">
 
 			<div class="highlight__project">
-				<a href="#"><img src="../assets/img/project-thumb-01.jpg" alt="" class="highlight__project__img"></a>
-				<h2 class="highlight__project__title">CCI Hauts-de-France</h2>
+				<a href="#"><img src="../assets/img/ipsen-clinical-trials-thumb.jpg" data-img="ipsen-clinical-trials-thumb.jpg" alt="" class="highlight__project__img"></a>
+				<h2 class="highlight__project__title">Clinical Trials <span class="highlight__project__panel"></span></h2>
 			</div>
 			<div class="highlight__project highlight__project--alt">
-				<a href="#"><img src="../assets/img/project-thumb-01.jpg" alt="" class="highlight__project__img"></a>
-				<h2 class="highlight__project__title">Première Vision Denim</h2>
+				<a href="#"><img src="../assets/img/project-thumb-01.jpg" data-img="project-thumb-01.jpg" alt="" class="highlight__project__img"></a>
+				<h2 class="highlight__project__title">CCI Hauts-de-France <span class="highlight__project__panel"></span></h2>
 			</div>
 			<div class="highlight__project">
-				<a href="#"><img src="../assets/img/project-thumb-01.jpg" alt="" class="highlight__project__img"></a>
-				<h2 class="highlight__project__title">Cofel Serta Literie</h2>
+				<a href="#"><img src="../assets/img/sdis-35-thumb.jpg" data-img="sdis-35-thumb.jpg" alt="" class="highlight__project__img"></a>
+				<h2 class="highlight__project__title">SDIS 35 <span class="highlight__project__panel"></span></h2>
 			</div>
 
 			<div class="base-bloc">
 				<p>Some of the clients for whom I had the chance to work with :</p>
 				<div class="clients__list">
-					<a href="#" class="client__logo"><img src="http://placehold.it/80x80" alt=""></a>
-					<a href="#" class="client__logo"><img src="http://placehold.it/80x80" alt=""></a>
-					<a href="#" class="client__logo"><img src="http://placehold.it/80x80" alt=""></a>
-					<a href="#" class="client__logo"><img src="http://placehold.it/80x80" alt=""></a>
+					<a href="#" class="client__logo"><img src="../assets/img/client-euratechnologies.png" alt=""></a>
+					<a href="#" class="client__logo"><img src="../assets/img/client-produits-laitiers.png" alt=""></a>
+					<a href="#" class="client__logo"><img src="../assets/img/client-euratechnologies.png" alt=""></a>
+					<a href="#" class="client__logo"><img src="../assets/img/client-produits-laitiers.png" alt=""></a>
 				</div>
 			</div>
 
@@ -86,15 +86,37 @@
 		<section id="about" class="base-section">
 
 			<div class="base-bloc">
-				<p>I'm a french frontend developper from Paris. Currently working for <a href="https://beapi.fr/" class="mask-effect">Be API</a>, I'm also freelance so feel free to contact me if you have small projects !</p>
+				<p>I'm a french frontend freelance developper from Paris. Feel free to contact me if you need me for your projects !</p>
 
-				<p>Other than that, I'm a hardcore kid (yes, I listen to "<a href="https://www.youtube.com/watch?v=H6wYuhLxXm8" class="mask-effect">screaming people</a>") of 28 years old, traveller, food lover, gamer, brewer, musician... and plenty of others stuff.</p>
+				<p>Other than that, I'm a hardcore kid (yes, I listen to "<a href="https://www.youtube.com/watch?v=Lei58UXZzUQ" class="mask-effect">screaming people</a>") of 28 years old, traveller, food lover, gamer, brewer, musician... and plenty of others stuff.</p>
 			</div>
 
 		</section>
 
 		<!-- CONTACT -->
 		<section id="contact" class="base-section">
+			<div class="contact__links">
+				<a href="mailto:bertout.benjamin@gmail.com" class="contact__link">
+					<svg class="icon icon-envelope" aria-hidden="true" role="img">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-envelope"></use>
+					</svg>
+				</a>
+				<a href="https://www.linkedin.com/in/benjamin-bertout-04634441/" target="_blank" class="contact__link">
+					<svg class="icon icon-linkedin" aria-hidden="true" role="img">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-linkedin"></use>
+					</svg>
+				</a>
+				<a href="https://www.instagram.com/bbertout/" target="_blank" class="contact__link">
+					<svg class="icon icon-instagram" aria-hidden="true" role="img">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use>
+					</svg>
+				</a>
+				<a href="https://twitter.com/bbertout" target="_blank" class="contact__link">
+					<svg class="icon icon-twitter" aria-hidden="true" role="img">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+					</svg>
+				</a>
+			</div>
 		</section>
 
 	</div>

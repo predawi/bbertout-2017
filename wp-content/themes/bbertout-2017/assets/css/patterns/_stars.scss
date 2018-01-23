@@ -17,7 +17,7 @@
     width: 1px;
     height: 1px;
     background: $lightcolor;
-    @include animation(starFadeIn 2s forwards);
+    animation: starFadeIn 2s forwards;
 }
 
 .nova {

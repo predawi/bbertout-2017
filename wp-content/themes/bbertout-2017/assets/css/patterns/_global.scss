@@ -28,7 +28,7 @@
 									2px -2px $lightcolor,
 									-2px 2px $lightcolor,
 									-2px -2px $lightcolor;
-		@include transition(all 0.2s ease-in-out);
+		transition: all 0.2s ease-in-out;
 		&:before,
 		&:after {
 			content: "";
@@ -40,7 +40,7 @@
 		&:before {
 			top: 0;
 			width: 0; height: 100%;
-			@include transition(all 0.2s ease-in-out);
+			transition: all 0.2s ease-in-out;
 		}
 		&:after {
 			bottom: 6px;

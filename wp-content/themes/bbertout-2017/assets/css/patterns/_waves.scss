@@ -17,7 +17,7 @@
     height: 120px;
     margin-bottom: 0;
     opacity: 0;
-    @include transition(opacity 1s ease-in-out);
+    transition: opacity 1s ease-in-out;
     .fonts-loaded & {
         opacity: 1;
     }
@@ -26,11 +26,11 @@
         height: 130px;
     }
     &.disappear {
-        @include animation(disappearDown 1s ease-in-out 0.7s forwards);
+        animation: disappearDown 1s ease-in-out 0.7s forwards;
     }
 }
 
-@include keyframes(disappearDown) {
+@keyframes disappearDown {
     from {
         bottom: 0;
     }
@@ -52,7 +52,7 @@
     bottom: 0;
     background-image: url(#{$images-url}/black-waves-01.svg);
     background-repeat: repeat-x;
-    @include animation(move 5s ease-in-out -3s infinite);
+    animation: move 5s ease-in-out -3s infinite;
 }
 
 .waves-second {
@@ -60,7 +60,7 @@
     bottom: 15px;
     background-image: url(#{$images-url}/black-waves-02.svg);
     background-repeat: repeat-x;
-    @include animation(move 7s ease-in-out -5s infinite);
+    animation: move 7s ease-in-out -5s infinite;
 }
 
 .waves-third {
@@ -68,7 +68,7 @@
     bottom: 30px;
     background-image: url(#{$images-url}/black-waves-01.svg);
     background-repeat: repeat-x;
-    @include animation(move 9s ease-in-out -2s infinite);
+    animation:move 9s ease-in-out -2s infinite;
 }
 
 .waves-fourth {
@@ -76,10 +76,10 @@
     bottom: 45px;
     background-image: url(#{$images-url}/black-waves-02.svg);
     background-repeat: repeat-x;
-    @include animation(move 11s ease-in-out -9s infinite);
+    animation: move 11s ease-in-out -9s infinite;
 }
 
-@include keyframes(move) {
+@keyframes move {
     0% {
         transform: translateX(0);
     }
