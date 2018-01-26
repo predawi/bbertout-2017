@@ -66,6 +66,7 @@
     "magnific-popup": "1.1.0",
     "matchdep": "^2.0.0",
     "node-sass": "^4.7.2",
+    "node-vibrant": "^3.0.0",
     "penthouse": "^1.0.6",
     "picturefill": "3.0.2",
     "standard": "^10.0.3",
