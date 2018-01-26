@@ -4,6 +4,9 @@
 	display: none;
 	max-width: 680px;
 	margin: 30px auto;
+	&:first-of-type {
+		display: block;
+	}
 }
 .base__title {
 	margin-bottom: 30px;

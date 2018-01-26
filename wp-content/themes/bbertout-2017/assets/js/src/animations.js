@@ -3,7 +3,7 @@
  */
 
 // Dependencies
-var $ = require('jquery')
+const $ = require('jquery')
 
 // Hovering entering link
 $('.home-access__link').hover(function () {
@@ -28,4 +28,5 @@ $('.home-access__link').on('click', function () {
 
 function loadMainContent () {
   $('#main-content').fadeIn()
+  $('[href="#works"]').click()
 }

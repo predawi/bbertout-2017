@@ -33,7 +33,6 @@ function generateStars (context) {
 
     // Test if star number is reached
     if (starNumber >= 200) {
-      console.log('finish')
       clearInterval(starInterval)
     }
   }, 60)

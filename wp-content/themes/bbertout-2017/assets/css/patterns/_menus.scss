@@ -31,23 +31,29 @@
 					top: 12px; left: 0;
 					width: 0; height: 1px;
 					background: $darkcolor;
-					transition: all .2s cubic-bezier(0.9, 0, 0, 1);
+					animation: out .4s cubic-bezier(0.9, 0, 0, 1) forwards;
 				}
 				@include hover {
 					color: $darkcolor;
 					&:after {
-						width: 100%;
+						animation: in .4s cubic-bezier(0.9, 0, 0, 1) forwards;
 					}
 				}
-			}
-			&.active {
-				a {
+				&.active {
 					color: $darkcolor;
 					&:after {
-						width: 100%;
+						animation: in .4s cubic-bezier(0.9, 0, 0, 1) forwards;
 					}
 				}
 			}
 		}
 	}
+}
+@keyframes in {
+	from { width: 0; left: 0; }
+	to { width: 100%; left: 0; }
+}
+@keyframes out {
+	from { width: 100%; left: auto; right: 0; }
+	to { width: 0; left: auto; right: 0; }
 }
