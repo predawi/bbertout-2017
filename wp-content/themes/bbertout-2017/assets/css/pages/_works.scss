@@ -44,15 +44,16 @@
 		float: right;
 		max-width: 90%;
 		height: auto;
-		opacity: 0.5;
+		opacity: 1;
 		@include hover {
-			opacity: 1;
+			opacity: 0.5;
 		}
 	}
 }
 .highlight__project__title {
 	position: relative;
 	font-size: 38px;
+	font-family: $font-sansserif;
 	@media screen and (min-width: $tablet-medium) {
 		position: absolute;
 		z-index: 2;
@@ -60,6 +61,11 @@
 		max-width: 220px;
 		font-size: 46px;
 	}
+}
+.highlight__project__word {
+	display: inline-block;
+	padding: 0 8px;
+	background: $lightcolor;
 }
 .highlight__project__panel {
 	display: none;

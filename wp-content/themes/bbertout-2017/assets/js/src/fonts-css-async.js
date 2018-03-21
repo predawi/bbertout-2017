@@ -4,6 +4,7 @@ var FontFaceObserver = require('../vendor/fontfaceobserver')
 
 // load webfonts asyncusing LoasCSS filament group lib
 loadCSS('https://fonts.googleapis.com/css?family=Eczar')
+loadCSS('https://fonts.googleapis.com/css?family=Roboto:400,700')
 
 // detect loading of fonts using fontfaceobserver lib
 var eczar = new FontFaceObserver('Eczar', {

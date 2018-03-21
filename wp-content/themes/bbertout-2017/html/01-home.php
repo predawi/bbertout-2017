@@ -59,15 +59,26 @@
 
 			<div class="highlight__project">
 				<a href="#"><img src="../assets/img/ipsen-clinical-trials-thumb.jpg" data-img="ipsen-clinical-trials-thumb" alt="" class="highlight__project__img"></a>
-				<h2 class="highlight__project__title">Clinical Trials <span class="highlight__project__panel"></span></h2>
+				<h2 class="highlight__project__title">
+					<span class="highlight__project__word">Clinical</span>
+					<span class="highlight__project__word">Trials</span>
+					<span class="highlight__project__panel"></span>
+				</h2>
 			</div>
 			<div class="highlight__project highlight__project--alt">
 				<a href="#"><img src="../assets/img/project-thumb-01.jpg" data-img="project-thumb-01" alt="" class="highlight__project__img"></a>
-				<h2 class="highlight__project__title">CCI Hauts-de-France <span class="highlight__project__panel"></span></h2>
+				<h2 class="highlight__project__title">
+					<span class="highlight__project__word">CCI</span>
+					<span class="highlight__project__word">Hauts-de-France</span>
+					<span class="highlight__project__panel"></span>
+				</h2>
 			</div>
 			<div class="highlight__project">
 				<a href="#"><img src="../assets/img/sdis-35-thumb.jpg" data-img="sdis-35-thumb" alt="" class="highlight__project__img"></a>
-				<h2 class="highlight__project__title">SDIS 35 <span class="highlight__project__panel"></span></h2>
+				<h2 class="highlight__project__title">
+					<span class="highlight__project__word">SDIS 35</span>
+					<span class="highlight__project__panel"></span>
+				</h2>
 			</div>
 
 			<div class="base-bloc">
