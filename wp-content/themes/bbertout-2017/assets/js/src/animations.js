@@ -4,6 +4,7 @@
 
 // Dependencies
 const $ = require('jquery')
+const _ = require('underscore')
 
 // Hovering entering link
 $('.home-access__link').hover(function () {
@@ -14,6 +15,18 @@ $('.home-access__link').hover(function () {
 
 // Entering on site
 $('.home-access__link').on('click', function () {
+  prepareSite()
+})
+
+var deboucedPrepareSite = _.debounce(prepareSite, 500)
+$(window).bind('mousewheel DOMMouseScroll', function (event) {
+  if (event.originalEvent.wheelDelta < 0 || event.originalEvent.detail > 0) {
+    deboucedPrepareSite()
+    $(window).unbind('mousewheel DOMMouseScroll')
+  }
+})
+
+function prepareSite () {
   $('.global-wrapper').addClass('prepared')
   // Remove waves
   $('.waves__parallax').addClass('disappear')
@@ -24,7 +37,7 @@ $('.home-access__link').on('click', function () {
     // Load main content + new stars
     loadMainContent()
   }, 1400)
-})
+}
 
 function loadMainContent () {
   $('#main-content').fadeIn()

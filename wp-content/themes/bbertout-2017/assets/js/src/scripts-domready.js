@@ -10,10 +10,8 @@ $(document).ready(function () {
   // Declare some vars
   var err, palette
   var colorPanels = document.querySelectorAll('.highlight__project')
-  console.log(colorPanels)
 
   colorPanels.forEach(function (element) {
-    console.log(element)
     var dataImg = element.querySelector('.highlight__project__img').getAttribute('data-img')
 
     // Extract colors

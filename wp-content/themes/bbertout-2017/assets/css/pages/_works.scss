@@ -11,6 +11,12 @@
 	a {
 		display: block;
 		@include clearfix;
+		@include hover {
+			cursor: url(#{$images-url}/icon-eye.svg), pointer;
+			img {
+				opacity: 0.5;
+			}
+		}
 	}
 	&:after {
 		content: "";
@@ -45,21 +51,20 @@
 		max-width: 90%;
 		height: auto;
 		opacity: 1;
-		@include hover {
-			opacity: 0.5;
-		}
 	}
 }
 .highlight__project__title {
 	position: relative;
 	font-size: 38px;
 	font-family: $font-sansserif;
+	text-align: center;
 	@media screen and (min-width: $tablet-medium) {
 		position: absolute;
 		z-index: 2;
 		top: 50px; left: 0;
 		max-width: 220px;
 		font-size: 46px;
+		text-align: left;
 	}
 }
 .highlight__project__word {

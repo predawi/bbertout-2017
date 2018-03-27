@@ -9,13 +9,13 @@
 <!--[if !(IE)]><! -->
 <html class="no-js" lang="fr"><!--<![endif]-->
 	<head>
-		
+
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="initial-scale=1.0" />
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		
+
 		<title>Bbertout 2017</title>
-		
+
 		<link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicons/apple-touch-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicons/apple-touch-icon-60x60.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicons/apple-touch-icon-72x72.png">
@@ -37,7 +37,7 @@
 		<meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
 		<meta name="msapplication-config" content="favicons/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
-		
+
 		<!--[if lt IE 9]>
 			<script type="text/javascript" src="../assets/js/vendor_ie/html5shiv.min.js"></script>
 		<![endif]-->
@@ -45,13 +45,11 @@
 			<script type="text/javascript" src="../assets/js/vendor_ie/selectivizr.js"></script>
 		<![endif]-->
 
-		
-		
 		<link rel="stylesheet" type="text/css" media="all" href="../assets/css/style.css?t=<?php echo time(); ?>" />
-		
+
 		<!-- Modernizr Custom (JS + SVG detection) -->
 		<script type="text/javascript" src="../assets/js/vendor_async/modernizr.custom.min.js"></script>
-		
+
 		<!-- jQuery -->
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
