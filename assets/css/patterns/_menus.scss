@@ -1,0 +1,59 @@
+/* Menus
+----------------------------------------------------------------------------------------------------*/
+.menu {
+	position: static;
+	left: auto;
+	overflow: inherit;
+	background: none;
+	width: 100%;
+	padding: 0;
+	text-align: center;
+	.wrapper {
+		padding: 0;
+	}
+	ul {
+		@include clearfix;
+		font-size: 18px;
+		&>li {
+			position: relative;
+			display: inline-block;
+			margin: 0 15px;
+			list-style-type: none;
+			a {
+				position: relative;
+				display: block;
+				padding: 0;
+				text-decoration: none;
+				&:after {
+					content: "";
+					position: absolute;
+					z-index: 1;
+					top: 12px; left: 0;
+					width: 0; height: 1px;
+					background: $darkcolor;
+					animation: out .4s cubic-bezier(0.9, 0, 0, 1) forwards;
+				}
+				@include hover {
+					color: $darkcolor;
+					&:after {
+						animation: in .4s cubic-bezier(0.9, 0, 0, 1) forwards;
+					}
+				}
+				&.active {
+					color: $darkcolor;
+					&:after {
+						animation: in .4s cubic-bezier(0.9, 0, 0, 1) forwards;
+					}
+				}
+			}
+		}
+	}
+}
+@keyframes in {
+	from { width: 0; left: 0; }
+	to { width: 100%; left: 0; }
+}
+@keyframes out {
+	from { width: 100%; left: auto; right: 0; }
+	to { width: 0; left: auto; right: 0; }
+}

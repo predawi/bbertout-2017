@@ -1,0 +1,92 @@
+// -- WAVES
+.waves__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.waves__parallax {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    .fonts-loaded & {
+        opacity: 1;
+    }
+    li {
+        width: 100%;
+        height: 130px;
+    }
+    &.disappear {
+        animation: disappearDown 1s ease-in-out 0.7s forwards;
+    }
+}
+
+@keyframes disappearDown {
+    from {
+        bottom: 0;
+    }
+    to {
+        bottom: -100%;
+    }
+}
+
+.waves {
+    position: absolute;
+    left: 0;
+    width: calc(100% + 200px);
+    height: 130px;
+    background-size: auto 130px;
+}
+
+.waves-first {
+    z-index: 4;
+    bottom: 0;
+    background-image: url(#{$images-url}/black-waves-01.svg);
+    background-repeat: repeat-x;
+    animation: move 5s ease-in-out -3s infinite;
+}
+
+.waves-second {
+    z-index: 3;
+    bottom: 15px;
+    background-image: url(#{$images-url}/black-waves-02.svg);
+    background-repeat: repeat-x;
+    animation: move 7s ease-in-out -5s infinite;
+}
+
+.waves-third {
+    z-index: 2;
+    bottom: 30px;
+    background-image: url(#{$images-url}/black-waves-01.svg);
+    background-repeat: repeat-x;
+    animation:move 9s ease-in-out -2s infinite;
+}
+
+.waves-fourth {
+    z-index: 1;
+    bottom: 45px;
+    background-image: url(#{$images-url}/black-waves-02.svg);
+    background-repeat: repeat-x;
+    animation: move 11s ease-in-out -9s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

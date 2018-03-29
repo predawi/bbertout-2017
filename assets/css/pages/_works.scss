@@ -1,0 +1,106 @@
+/* Page works css
+-------------------------------------------------------------- */
+.highlight__project {
+	$parent: &;
+	position: relative;
+	margin-bottom: 80px;
+	@include clearfix;
+	@media screen and (min-width: $tablet-medium) {
+		margin-bottom: 150px;
+	}
+	a {
+		display: block;
+		@include clearfix;
+		@include hover {
+			cursor: url(#{$images-url}/icon-eye.svg), pointer;
+			img {
+				opacity: 0.5;
+			}
+		}
+	}
+	&:after {
+		content: "";
+		display: none;
+		position: absolute;
+		z-index: 2;
+		bottom: 0; left: 0;
+		width: 100%; height: 100%;
+		background: $lightcolor;
+		animation: show 1s cubic-bezier(.9, 0, 0, 1) forwards;
+		transition: all 1s cubic-bezier(.9, 0, 0, 1);
+		@media screen and (min-width: $tablet-medium) {
+			display: block;
+		}
+	}
+	&.visible {
+		#{$parent}__panel {
+			height: 0;
+		}
+	}
+}
+@keyframes show {
+	from { height: 100%; }
+	to { height: 0; }
+}
+.highlight__project__img {
+	position: relative;
+	z-index: 1;
+	max-width: 100%;
+	@media screen and (min-width: $tablet-medium) {
+		float: right;
+		max-width: 90%;
+		height: auto;
+		opacity: 1;
+	}
+}
+.highlight__project__title {
+	position: relative;
+	font-size: 38px;
+	font-family: $font-sansserif;
+	text-align: center;
+	@media screen and (min-width: $tablet-medium) {
+		position: absolute;
+		z-index: 2;
+		top: 50px; left: 0;
+		max-width: 220px;
+		font-size: 46px;
+		text-align: left;
+	}
+}
+.highlight__project__word {
+	display: inline-block;
+	padding: 0 8px;
+	background: $lightcolor;
+}
+.highlight__project__panel {
+	display: none;
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: $darkcolor;
+	transition: height .4s cubic-bezier(.9, 0, 0, 1);
+	@media screen and (min-width: $tablet-medium) {
+		display: block;
+	}
+}
+.highlight__project--alt {
+	@media screen and (min-width: $tablet-medium) {
+		.highlight__project__img {
+			float: left;
+		}
+		.highlight__project__title {
+			left: auto; right: 0;
+		}
+	}
+}
+
+.clients__list {
+
+}
+.client___logo {
+	display: inline-block;
+	margin: 0 20px 20px;
+}
