@@ -135,7 +135,7 @@
 			<div class="base-bloc">
 				<p>I'm a french frontend freelance developper from Paris. Feel free to contact me if you need me for your projects !</p>
 
-				<p>Other than that, I'm a hardcore kid (yes, I listen to "<a href="https://www.youtube.com/watch?v=Lei58UXZzUQ" target="_blank" class="mask-effect">screaming people</a>") of 29 years old, traveller, food lover, gamer, brewer, musician... and plenty of others stuff.</p>
+				<p>Other than that, I'm a hardcore kid (yes, I listen to "<a href="https://www.youtube.com/watch?v=Lei58UXZzUQ" target="_blank" class="mask-effect">screaming people</a>") of 30 years old, traveller, food lover, gamer, brewer, musician... and plenty of others stuff.</p>
 			</div>
 
 		</section>
