@@ -56,16 +56,41 @@
 
 		<!-- WORKS -->
 		<section id="works" class="base-section">
-
+			<div class="highlight__project highlight__project--alt">
+				<a href="http://clement-lemaire.com/" target="_blank"><img src="../assets/img/clement-lemaire-thumb.jpg" data-img="clement-lemaire-thumb" alt="" class="highlight__project__img"></a>
+				<h2 class="highlight__project__title">
+					<span class="highlight__project__word">Clément</span>
+					<span class="highlight__project__word">Lemaire</span>
+					<span class="highlight__project__word">Photo</span>
+					<span class="highlight__project__panel"></span>
+				</h2>
+			</div>
 			<div class="highlight__project">
-				<a href="http://sarahnorrsken.fr/" target="_blank">
-					<img src="assets/img/sarah-norrsken-thumb.jpg" data-img="sarah-norrsken-thumb" alt="" class="highlight__project__img">
+				<a href="https://askafrenchgirl.com/" target="_blank"><img src="../assets/img/askafrenchgirl-thumb.jpg" data-img="askafrenchgirl-thumb" alt="" class="highlight__project__img"></a>
+				<h2 class="highlight__project__title">
+					<span class="highlight__project__word">Ask</span>
+					<span class="highlight__project__word">A</span>
+					<span class="highlight__project__word">French Girl</span>
+					<span class="highlight__project__panel"></span>
+				</h2>
+			</div>
+			<div class="highlight__project highlight__project--alt">
+				<a href="http://marcreidiboym.com/" target="_blank">
+					<img src="assets/img/marc-reidiboym-thumb.jpg" data-img="marc-reidiboym-thumb" alt="" class="highlight__project__img">
 					<h2 class="highlight__project__title">
-						<span class="highlight__project__word">Sarah</span>
-						<span class="highlight__project__word">Norrsken</span>
+						<span class="highlight__project__word">Marc</span>
+						<span class="highlight__project__word">Reidiboym</span>
+						<span class="highlight__project__word">Architecte</span>
 						<span class="highlight__project__panel"></span>
 					</h2>
 				</a>
+			</div>
+			<div class="highlight__project">
+				<a href="http://uncppd.com/" target="_blank"><img src="../assets/img/uncppd-thumb.jpg" data-img="uncppd-thumb" alt="" class="highlight__project__img"></a>
+				<h2 class="highlight__project__title">
+					<span class="highlight__project__word">UNCPPD</span>
+					<span class="highlight__project__panel"></span>
+				</h2>
 			</div>
 			<div class="highlight__project highlight__project--alt">
 				<a href="https://hautsdefrance.cci.fr/" target="_blank">
@@ -110,7 +135,7 @@
 			<div class="base-bloc">
 				<p>I'm a french frontend freelance developper from Paris. Feel free to contact me if you need me for your projects !</p>
 
-				<p>Other than that, I'm a hardcore kid (yes, I listen to "<a href="https://www.youtube.com/watch?v=Lei58UXZzUQ" target="_blank" class="mask-effect">screaming people</a>") of 28 years old, traveller, food lover, gamer, brewer, musician... and plenty of others stuff.</p>
+				<p>Other than that, I'm a hardcore kid (yes, I listen to "<a href="https://www.youtube.com/watch?v=Lei58UXZzUQ" target="_blank" class="mask-effect">screaming people</a>") of 29 years old, traveller, food lover, gamer, brewer, musician... and plenty of others stuff.</p>
 			</div>
 
 		</section>

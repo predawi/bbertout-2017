@@ -1,0 +1,151 @@
+/**
+ * Form
+ *
+ * `.radio--custom` class can be applied to a parent div wrapping `<input type="radio">` element.  
+ * `.checbox--custom` class can be applied to a parent div wrapping `<input type="checkbox">` element.  
+ * `.select--custom` class can be applied to a parent div wrapping `<select>` element.<br>
+ *
+ * @section Form
+ * @page components
+ *
+ * @example
+ * <form action="#">
+ *		<div class="radio--custom">
+ *			<input id="radio-1" name="radio" type="radio" checked>
+ *			<label for="radio-1">Radio item <br> on two line</label>
+ *		</div>
+ *		<div class="radio--custom">
+ *			<input id="radio-2" name="radio" type="radio">
+ *			<label for="radio-2">Radio item</label>
+ *		</div>
+ *		<div class="checkbox--custom">
+ *			<input id="checkbox-1" name="checkbox1" type="checkbox" checked>
+ *			<label for="checkbox-1">Checkbox item <br>on two line</label>
+ *		</div>
+ *		<div class="checkbox--custom">
+ *			<input id="checkbox-2" name="checkbox2" type="checkbox">
+ *			<label for="checkbox-2">Checkbox item</label>
+ *		</div>
+ *		<div class="select--custom">
+ *			<select>
+ *				<option>M.</option>
+ *				<option>Mme</option>
+ *			</select>
+ *		</div>
+ * </form>
+ */
+// All inputs variables
+$text-inputs-list: 'input[type="color"]',
+	'input[type="date"]',
+	'input[type="datetime"]',
+	'input[type="datetime-local"]',
+	'input[type="email"]',
+	'input[type="month"]',
+	'input[type="number"]',
+	'input[type="password"]',
+	'input[type="search"]',
+	'input[type="tel"]',
+	'input[type="text"]',
+	'input[type="time"]',
+	'input[type="url"]',
+	'input[type="week"]',
+	'input:not([type])',
+	'textarea';
+
+$all-text-inputs:        assign-inputs($text-inputs-list);
+$all-text-inputs-active: assign-inputs($text-inputs-list, active);
+$all-text-inputs-focus:  assign-inputs($text-inputs-list, focus);
+$all-text-inputs-hover:  assign-inputs($text-inputs-list, hover);
+
+#{$all-text-inputs},
+textarea {
+	box-sizing: border-box;
+	width: 100%;
+	border: 0;
+	padding: $half-base-spacing;
+	color: $textcolor;
+	background: darken($lightcolor, 5%);
+	border-radius: 0; //reset border radius for ios
+	transition : background 0.5s ease;
+	appearance: none;
+	@include placeholder {
+		color: lighten($textcolor, 50%);
+	}
+}
+
+#{$all-text-inputs-hover},
+textarea:hover { // Target the :hover pseudo-class
+	background: darken($lightcolor, 7%);
+}
+
+#{$all-text-inputs-focus},
+textarea:focus { // Target the :focus pseudo-class
+	background: darken($lightcolor, 7.5%);
+}
+
+// Label
+label {
+	display: inline-block;
+	font-weight: 700;
+}
+
+// Checkbox + Radio
+.checkbox--custom {
+	@include checkbox--custom($maincolor);
+}
+.radio--custom {
+	@include checkbox--custom($maincolor);
+	@include radio--custom();
+}
+
+// Textarea
+textarea {
+	resize:vertical;
+}
+
+// Form layout
+.form__row {
+	@include clearfix;
+	position: relative;
+	margin: 0 0 $base-spacing;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+// Custom select
+.select--custom {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	border: 1px solid darken($lightcolor, 5%);
+	overflow: hidden;
+	background-color: $lightcolor;
+	background: $lightcolor url("#{$images-url}/icons/down.svg") no-repeat 98% 50%;
+	background-size: 11px 6px;
+	select {
+		width: 100%;
+		line-height: 1.1;
+		padding: $half-base-spacing;
+		border: none;
+		box-shadow: none;
+		background-color: transparent;
+		background-image: none;
+		@include appearance(none);
+		option {
+			border: 0;
+			color: $darkcolor;
+			background-color: $lightcolor;
+		}
+	}
+}
+_:-ms-input-placeholder, :root .select--custom select { //ie10 
+	width: 120%;
+}
+.lte-ie9 .select--custom select { //ie9
+	width: 120%;
+	option {
+		background-color: transparent;
+	}
+}

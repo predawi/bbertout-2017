@@ -58,6 +58,13 @@
 		<section id="works" class="base-section">
 
 			<div class="highlight__project">
+				<a href="http://uncppd.com/" target="_blank"><img src="../assets/img/uncppd-thumb.jpg" data-img="uncppd-thumb" alt="" class="highlight__project__img"></a>
+				<h2 class="highlight__project__title">
+					<span class="highlight__project__word">UNCPPD</span>
+					<span class="highlight__project__panel"></span>
+				</h2>
+			</div>
+			<div class="highlight__project">
 				<a href="http://sarahnorrsken.fr/" target="_blank"><img src="../assets/img/sarah-norrsken-thumb.jpg" data-img="sarah-norrsken-thumb" alt="" class="highlight__project__img"></a>
 				<h2 class="highlight__project__title">
 					<span class="highlight__project__word">Sarah</span>

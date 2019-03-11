@@ -1,0 +1,108 @@
+/**
+ * Buttons
+ *
+ * The Button `.button` class can be applied to `<button>`, `<input>`, or `<a>` elements.  
+ * Use `.button--round`, `.button--outline`, `.button--revert` class for a specific style.  
+ * For SEO purpose use `data-href`, `data-target` and `data-filename` in order to have buttons playing as link.
+ *
+ * @section Buttons
+ * @page components
+ *
+ * @example
+ * <a href="#" class="button">Anchor</a>
+ * <input type="submit" class="button--round" value="Input"/>
+ * <button type="button" class="button--outline">Button</button>
+ * <button type="button" class="button" data-href="https://beapi.fr/">Button as a link</button>
+ * <button type="button" class="button" data-href="https://beapi.fr/" data-target="_blank">Button as a link in a new tab</button>
+ * <button type="button" class="button" data-href="#pdf_name.pdf" data-target="download" data-filename="pdf_name.pdf">Button as a download link</button>
+ */
+
+ $buttons-list: 'button',
+'input[type="button"]',
+'input[type="reset"]',
+'input[type="submit"]';
+
+$all-buttons : assign-inputs($buttons-list);
+$all-button-inputs : $all-buttons;
+
+@mixin button {
+	display: inline-block;
+	padding: 10px;
+	color: $textcolor;
+	border: 1px solid $maincolor;
+	background: $maincolor;
+	transition: border-color .25s ease-in-out, background-color .25s ease-in-out, transform .25s ease-in-out;
+	svg {
+		pointer-events: none;
+	}
+	&:hover {
+		color: $textcolor;
+		border-color: darken($maincolor, 5%);
+		background-color: darken($maincolor, 5%);
+		transform: translateY(-1px);
+	}
+	&:focus {
+		outline: none;
+		color: $textcolor;
+		border-color: darken($maincolor, 5%);
+		background-color: darken($maincolor, 5%);
+		transform: translateY(-1px);
+	}
+	&:active {
+		color: $textcolor;
+		border-color: $maincolor;
+		background-color: $maincolor;
+		transform: translateY(1px);
+	}
+}
+
+// Modifier mixins
+@mixin button--round {
+	border-radius: 5px;
+}
+
+@mixin button--circle {
+	border-radius: 50%;
+}
+
+@mixin button--outline {
+	color: $maincolor;
+	background-color: transparent;
+}
+
+@mixin button--revert {
+	border-color: $lightcolor;
+	background-color: $lightcolor;
+	color: $maincolor;
+}
+
+#{$all-button-inputs} {
+	@include button;
+}
+
+.button {
+	$parent: &;
+	@include button;
+	&__text {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&__icon {
+		width: 5px;
+		height: 9px;
+		margin: 0 4px;
+		vertical-align: middle;
+	}
+	&--outline {
+		@include button--outline;
+	}
+	&--revert {
+		@include button--revert;
+	}
+	&--round {
+		@include button--round;
+	}
+	&--circle {
+		@include button--circle;
+	}
+}
