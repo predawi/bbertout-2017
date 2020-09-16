@@ -61,7 +61,7 @@
     "gulp-watch": "^4.3.11",
     "jquery": "^3.2.1",
     "jshint": "^2.9.5",
-    "lazysizes": "^4.0.0-rc3",
+    "lazysizes": "^5.2.1",
     "matchdep": "^2.0.0",
     "penthouse": "^1.0.6",
     "picturefill": "3.0.2",
