@@ -56,6 +56,13 @@
 
 		<!-- WORKS -->
 		<section id="works" class="base-section">
+			<div class="highlight__project">
+				<a href="http://www.platus.eu/" target="_blank"><img src="../assets/img/platus-thumb.jpg" data-img="platus-thumb" alt="" class="highlight__project__img"></a>
+				<h2 class="highlight__project__title">
+					<span class="highlight__project__word">Platus</span>
+					<span class="highlight__project__panel"></span>
+				</h2>
+			</div>
 			<div class="highlight__project highlight__project--alt">
 				<a href="http://clement-lemaire.com/" target="_blank"><img src="../assets/img/clement-lemaire-thumb.jpg" data-img="clement-lemaire-thumb" alt="" class="highlight__project__img"></a>
 				<h2 class="highlight__project__title">
@@ -111,6 +118,16 @@
 					</h2>
 				</a>
 			</div>
+			<div class="highlight__project highlight__project--alt">
+				<a href="https://www.ain.fr/" target="_blank">
+					<img src="assets/img/ain-thumb.jpg" data-img="ain-thumb" alt="" class="highlight__project__img">
+					<h2 class="highlight__project__title">
+						<span class="highlight__project__word">Département</span>
+						<span class="highlight__project__word">de l'Ain</span>
+						<span class="highlight__project__panel"></span>
+					</h2>
+				</a>
+			</div>
 
 			<!-- div class="base-bloc">
 				<p>Some of the clients for whom I had the chance to work with :</p>
@@ -135,7 +152,19 @@
 			<div class="base-bloc">
 				<p>I'm a french frontend freelance developper from Paris. Feel free to contact me if you need me for your projects !</p>
 
-				<p>Other than that, I'm a hardcore kid (yes, I listen to "<a href="https://www.youtube.com/watch?v=Lei58UXZzUQ" target="_blank" class="mask-effect">screaming people</a>") of 30 years old, traveller, food lover, gamer, brewer, musician... and plenty of others stuff.</p>
+				<script>
+					function _calculateAge(birthday) { // birthday is a date
+						var ageDifMs = Date.now() - birthday.getTime();
+						var ageDate = new Date(ageDifMs); // miliseconds from epoch
+						return Math.abs(ageDate.getUTCFullYear() - 1970);
+					}
+
+					var age = _calculateAge(new Date(1988, 15, 11))
+				</script>
+
+				<p>My main skills are HTML, CSS, Javascript (ES5/ES6), jQuery, Bootstrap, Gulp, npm, Webpack, Git, SEO and accessibility. <br>I also have notions on Vue.js, Twig, PHP, WordPress, WooCommerce, Sketch, Figma, Illustrator, Photoshop.</p>
+
+				<p>Other than that, I'm a hardcore kid (yes, I listen to "<a href="https://www.youtube.com/watch?v=jUifGoxMukk" target="_blank" class="mask-effect">screaming people</a>") of <script>document.write(age);</script> years old, musician, traveller, food lover, gamer, brewer... and plenty of others stuff.</p>
 			</div>
 
 		</section>
